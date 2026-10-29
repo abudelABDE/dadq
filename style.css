@@ -1,0 +1,250 @@
+*{
+    font-family: serif , sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+ body{
+background-color: rgba(2, 2, 2, 0.489);
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+ }
+
+ .contenaire{
+    margin-top: 10px;
+    width:calc(100% - 5%);
+    height:calc(100% - 5%);
+border-radius: 20px;
+ }
+ header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 10px;
+padding: 10px;
+border-radius: 20px;
+background-color: rgb(255, 255, 255, 0.3);
+ }
+
+header ul { 
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+list-style: none;
+font-family: 18px;
+}
+.logo img{
+    height: 60PX;
+    width: 80PXX;
+    
+}
+main{
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+.sec{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.gallerie{
+    margin: auto;
+     width: calc((100% - 40px) / 3);
+    overflow: hidden;
+    border-radius: 20px;
+}
+.gallerie img{
+    padding: 10px;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ;
+     border-radius: 20px;
+}
+@media (max-width:768PX){
+    .gallerie{
+     width: calc((100% - 20px) / 2);
+}
+}
+@media (max-width:480PX){
+    .gallerie{
+     width: calc(100%);
+}
+}
+/* menu */
+.menu{
+     width:calc(100% - 1%);
+     border-radius: 20px; 
+      background-image: linear-gradient(90deg ,rgb(8, 8, 8), transparent,rgb(17, 17, 18));
+    }
+.menu h1{
+font-size: 40px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-left: 40PX;
+}
+
+.menu h2{
+font-size: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-left: 20PX;
+letter-spacing: 3PX;
+}
+.menu h2 span{
+font-size: 40px;
+color: rgb(237, 78, 5);
+}
+@media (max-width:480PX){
+    .menu h1{
+     font-size: 25px;
+} 
+.menu h2 { font-size: 18px;}}
+
+
+
+
+
+.menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 32px;
+   
+
+}
+button{
+    color: rgb(21, 21, 19);
+    background-color: rgb(223, 233, 233);
+    width: 25%;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 5px 0px;
+    border-radius: 10px;
+    font-size: 30PX;
+    box-shadow:  0PX 0PX 30PX rgb(229, 228, 241);
+}
+
+
+/* footer  */
+
+.contact-list{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    font-size: 30px;
+    position: fixed;
+   right: 10px;
+   bottom: 10px;
+}
+/* =========================
+   TELEPHONE
+========================= */
+
+@media (max-width: 700px) {
+ 
+    header {
+        height: 70px;
+        padding: 0 20px;
+       
+    }
+    /* Afficher les 3 barres */
+    .menu-btn {
+        display: block;
+    
+    }
+    span{
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        color: white;
+        cursor: pointer;
+    }
+    /* Cacher le menu */
+    .ulheader {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 0 20px;
+        background: transparent;
+        backdrop-filter: blur(12px);
+        cursor: pointer;
+    }
+    /* Menu ouvert */
+    .ulheader.active {
+        display: flex;
+    }
+    .ulheader li {
+        width: 100%;
+        text-align: center;
+       
+    .ulheader li a {
+        display: block;
+        padding: 15px;
+        font-size: 15px;
+         cursor: pointer;
+    }
+    }
+    .ulheader li a:hover {
+        background: rgba(206, 9, 9, 0.856);
+    }
+
+    button{
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 7px 0px;
+    border-radius: 10px;
+    font-size: 20PX;
+    border: none;
+
+  
+}
+.contact-list{
+    position: fixed;
+   right: 0px;
+   bottom: 0px;
+}
+.img { 
+    width: 300PX;
+    height: 400px;
+    position: fixed;
+    right: -60px;
+    bottom: -60px;
+    background-image: url(kk.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    
+ }
+
+
+}
+/* =========================
+   TELEPHONE fiiiiin
+========================= */
+
+#tel{color: #34a853;}
+#wtsp{color: #25d366;}
+#gml{color: #ea4335;}
+#fcb{color: #1877f2;}
+
+
+#tel:hover{color: #187e33;}
+#wtsp:hover{color: #0fa145;}
+#gml:hover{color: #b32619;}
+#fcb:hover{color: #0b4a9c;}
+  
+
